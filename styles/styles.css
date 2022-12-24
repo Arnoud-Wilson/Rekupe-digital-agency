@@ -22,6 +22,29 @@ body {
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+button {
+    background-color: var(--color-Roze);
+    margin: 30px;
+    padding: 20px 35px;
+    border-radius: 50px;
+    border: var(--color-Roze);
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+}
+
+.header-inner a,
+.header-inner a:visited {
+    color: white;
+}
+
 /* ------------------------------- 2. Typography ----------------------------------- */
 
 body {
@@ -52,6 +75,70 @@ h1, h2, h3, h4 {
 
 /* --------------- 4.1 Header ------------------------- */
 
+header {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(4deg, rgba(87,34,205,0.785049053801208) 0%, rgba(76,69,228,0.9251050762101716) 39%);
+}
+
+.header-outer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1600px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 12px 0;
+    position: sticky;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1600px;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.header-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 15px 200px 15px;
+}
+
+.header-inner h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+}
+
+.header-inner p {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.nav-list a {
+    color: white;
+}
+
+.squiggle {
+    position: absolute;
+    left: 160px;
+    bottom: -210px;
+}
+
 /* --------------- 4.2 Introduction ------------------- */
+
+#intro {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
