@@ -10,7 +10,7 @@
     4. Areas
         4.1 Header
         4.2 Introduction
-        etc.
+        4.3 Case Studies
     5. Media Queries
 ////////////////////////*/
 
@@ -90,7 +90,7 @@ header {
 .navbar {
     display: flex;
     flex-direction: row;
-    padding: 12px 0;
+    padding: 30px 0;
     position: sticky;
 }
 
@@ -108,7 +108,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 15px 200px 15px;
+    margin: 40px 15px 200px 15px;
 }
 
 .header-inner h1 {
@@ -140,5 +140,35 @@ header {
     display: flex;
     flex-direction: row;
 }
+
+.intro-inner {
+    flex-basis: 1600px;
+    margin: 70px 15px;
+    text-align: center;
+}
+
+.intro-inner h3 {
+    color: var(--color-Paars);
+}
+
+.intro-inner p {
+    color: var(--color-Zwart);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.intro-inner a {
+    color: var(--color-Paars);
+}
+
+/* --------------- 4.3 Case Studies ------------------- */
+
+#case-studies {
+    background-color: var(--color-Lichtgrijs);
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
