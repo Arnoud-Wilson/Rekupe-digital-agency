@@ -11,6 +11,8 @@
         4.1 Header
         4.2 Introduction
         4.3 Case Studies
+        4.4 Services
+ */
     5. Media Queries
 ////////////////////////*/
 
@@ -49,10 +51,12 @@ button {
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: var(--color-Zwart);
 }
 
 h1, h2, h3, h4 {
     font-family: 'Merriweather', serif;
+    color: var(--color-Zwart);
 }
 
 /* ------------------------------- 3. Layout --------------------------------------- */
@@ -209,5 +213,45 @@ header {
     font-size: 0.8rem;
     font-weight: bold;
 }
+
+/* --------------- 4.4 Services ------------------- */
+
+#service {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.service-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 70px 15px;
+}
+
+.service-tile {
+    border: 1px solid var(--color-Paars);
+    margin: 20px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+}
+
+.service-tile img {
+    width: 80px;
+}
+
+.service-tile h2 {
+    color: var(--color-Paars);
+}
+
+.service-tile p {
+    color: var(--color-Grijs);
+}
+
+
+
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
