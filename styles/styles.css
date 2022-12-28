@@ -12,7 +12,8 @@
         4.2 Introduction
         4.3 Case Studies
         4.4 Services
- */
+        4.5 Contact
+        4.6 Footer
     5. Media Queries
 ////////////////////////*/
 
@@ -34,17 +35,14 @@ a {
 
 button {
     background-color: var(--color-Roze);
+    font-family: 'Roboto', sans-serif;
+    color: white;
     margin: 30px;
     padding: 20px 35px;
     border-radius: 50px;
     border: var(--color-Roze);
     text-transform: uppercase;
     box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
-}
-
-.header-inner a,
-.header-inner a:visited {
-    color: white;
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
@@ -118,6 +116,11 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 40px 15px 200px 15px;
+}
+
+.header-inner a,
+.header-inner a:visited {
+    color: white;
 }
 
 .header-inner h1 {
@@ -248,6 +251,90 @@ header {
 
 .service-tile p {
     color: var(--color-Grijs);
+}
+
+/* --------------- 4.5 Contact ------------------- */
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(4deg, rgba(87,34,205,0.785049053801208) 0%, rgba(76,69,228,0.9251050762101716) 39%);
+}
+
+.contact-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 1600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 70px 15px 35px 15px;
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-inner-wrapper h2 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.contact-inner-wrapper button {
+    padding: 20px 65px;
+}
+
+.contact-inner-wrapper button:hover {
+    cursor: pointer;
+}
+
+.contact-inner-wrapper p {
+    margin-bottom: 30px;
+}
+
+.contact-form label {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form input {
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    border: none;
+}
+
+.contact-form input::placeholder {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-Grijs);
+}
+
+.contact-form textarea {
+    padding: 15px;
+    height: 180px;
+    border-radius: 3px;
+    border: none;
+}
+
+.contact-form textarea::placeholder {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-Grijs);
+}
+
+/* --------------- 4.6 Footer ------------------- */
+
+footer p {
+    background-color: #0C0C0C;
+    color: var(--color-Lichtgrijs);
+    margin: 0;
+    padding: 20px;
+    font-size: 0.7rem;
+    text-align: center;
 }
 
 
