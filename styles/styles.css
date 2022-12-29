@@ -194,6 +194,8 @@ header {
 }
 
 .case-studies-wrapper {
+    display: flex;
+    flex-direction: column;
     margin: 15px 0;
 }
 
@@ -337,8 +339,54 @@ footer p {
     text-align: center;
 }
 
-
-
-
-
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (min-width: 992px) {
+    .nav-list {
+        justify-content: flex-end;
+    }
+
+    .nav-list li {
+        margin: 0 30px;
+    }
+
+    .header-inner {
+        margin: 40px 200px 200px 200px;
+    }
+
+    .intro-inner {
+        margin: 70px 200px;
+    }
+
+    .case-studies-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-wrapper {
+        flex-basis: 60vw;
+        padding: 50px 50px;
+    }
+
+    .case-studies-inner article:nth-child(even) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .service-inner-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .service-tile {
+        flex-basis: 350px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .contact-inner-wrapper {
+        margin: 70px 250px 35px 250px;
+    }
+}
