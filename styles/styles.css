@@ -80,6 +80,7 @@ h1, h2, h3, h4 {
 header {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     background: linear-gradient(4deg, rgba(87,34,205,0.785049053801208) 0%, rgba(76,69,228,0.9251050762101716) 39%);
 }
 
@@ -151,6 +152,7 @@ header {
     background-color: white;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .intro-inner {
@@ -182,6 +184,7 @@ header {
     background-color: var(--color-Lichtgrijs);
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .case-studies-inner {
@@ -225,6 +228,7 @@ header {
     background-color: white;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .service-inner-wrapper {
@@ -260,6 +264,7 @@ header {
 #contact {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     background: linear-gradient(4deg, rgba(87,34,205,0.785049053801208) 0%, rgba(76,69,228,0.9251050762101716) 39%);
 }
 
