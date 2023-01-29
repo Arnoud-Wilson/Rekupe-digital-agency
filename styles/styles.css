@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        4.3 Case Studies
+        4.4 Services
+        4.5 Contact
+        4.6 Footer
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+button {
+    background-color: var(--color-Roze);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 30px;
+    padding: 20px 35px;
+    border-radius: 50px;
+    border: var(--color-Roze);
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-Zwart);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    color: var(--color-Zwart);
+}
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+:root {
+    --color-Paars: #5722CD;
+    --color-Blauw: #4845E4;
+    --color-Roze: #ED4385;
+    --color-Zwart: #0C0C0C;
+    --color-Lichtpaars: #F2F0FF;
+    --color-Lichtgrijs: #F3F6F9;
+    --color-Grijs: #7A7A7A;
+}
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(4deg, rgba(87,34,205,0.785049053801208) 0%, rgba(76,69,228,0.9251050762101716) 39%);
+}
+
+.header-outer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    position: sticky;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 1600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.header-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 15px 200px 15px;
+}
+
+.header-inner a,
+.header-inner a:visited {
+    color: white;
+}
+
+.header-inner h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+}
+
+.header-inner p {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.nav-list a {
+    color: white;
+}
+
+.squiggle {
+    position: absolute;
+    align-self: center;
+    bottom: -210px;
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+
+#intro {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.intro-inner {
+    flex-basis: 1600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 70px 15px;
+    text-align: center;
+}
+
+.intro-inner h3 {
+    color: var(--color-Paars);
+}
+
+.intro-inner p {
+    color: var(--color-Zwart);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.intro-inner a {
+    color: var(--color-Paars);
+}
+
+/* --------------- 4.3 Case Studies ------------------- */
+
+#case-studies {
+    background-color: var(--color-Lichtgrijs);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.case-studies-inner {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 70px 15px;
+}
+
+.case-studies-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.img-wrapper img {
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+}
+
+.text-wrapper p {
+    font-weight: bold;
+    margin: 35px 0;
+
+}
+
+.text-wrapper a,
+.text-wrapper a:visited {
+    color: var(--color-Paars);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* --------------- 4.4 Services ------------------- */
+
+#service {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.service-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 70px 15px;
+}
+
+.service-tile {
+    border: 1px solid var(--color-Paars);
+    margin: 20px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
+}
+
+.service-tile img {
+    width: 80px;
+}
+
+.service-tile h2 {
+    color: var(--color-Paars);
+}
+
+.service-tile p {
+    color: var(--color-Grijs);
+}
+
+/* --------------- 4.5 Contact ------------------- */
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(4deg, rgba(87,34,205,0.785049053801208) 0%, rgba(76,69,228,0.9251050762101716) 39%);
+}
+
+.contact-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 1600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 70px 15px 35px 15px;
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-inner-wrapper h2 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.contact-inner-wrapper button {
+    padding: 20px 65px;
+}
+
+.contact-inner-wrapper button:hover {
+    cursor: pointer;
+}
+
+.contact-inner-wrapper p {
+    margin-bottom: 30px;
+}
+
+.contact-form label {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form input {
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    border: none;
+}
+
+.contact-form input::placeholder {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-Grijs);
+}
+
+.contact-form textarea {
+    padding: 15px;
+    height: 180px;
+    border-radius: 3px;
+    border: none;
+}
+
+.contact-form textarea::placeholder {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-Grijs);
+}
+
+/* --------------- 4.6 Footer ------------------- */
+
+footer p {
+    background-color: #0C0C0C;
+    color: var(--color-Lichtgrijs);
+    margin: 0;
+    padding: 20px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (min-width: 992px) {
+    .nav-list {
+        justify-content: flex-end;
+    }
+
+    .nav-list li {
+        margin: 0 30px;
+    }
+
+    .header-inner {
+        margin: 40px 200px 200px 200px;
+    }
+
+    .intro-inner {
+        margin: 70px 200px;
+    }
+
+    .case-studies-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-wrapper {
+        flex-basis: 60vw;
+        padding: 50px 50px;
+    }
+
+    .case-studies-inner article:nth-child(even) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .service-inner-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .service-tile {
+        flex-basis: 350px;
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .contact-inner-wrapper {
+        margin: 70px 250px 35px 250px;
+    }
+}
